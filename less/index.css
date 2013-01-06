@@ -1,0 +1,570 @@
+/*!
+ * Bootstrap v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 24px;
+  font-family: "Droid Sans";
+}
+ol,
+ul {
+  list-style: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#map_canvas img,
+.google-maps img {
+  max-width: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 34px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  vertical-align: baseline;
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body:after {
+  clear: both;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+#container {
+  width: 936px;
+  *zoom: 1;
+  margin: 0 auto;
+}
+#container:before,
+#container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#container:after {
+  clear: both;
+}
+#container:before,
+#container:after {
+  content: "";
+  display: table;
+}
+#container:after {
+  clear: both;
+}
+/*
+ *  visual grid for design purposes.
+ */
+#grid {
+  /* Dimensions - same width as your grid with gutters */
+
+  width: 960px;
+  /* Grid (left-aligned)
+    position: absolute;
+    top: 0;
+    left: 0;
+     */
+
+  /* Grid (centered) */
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+}
+/**
+ * Vertical grid lines
+ *
+ * Set the column width taking the borders into consideration,
+ * and use margins to set column gutters.
+ */
+#grid div.vert {
+  width: 54px;
+  background: black;
+  opacity: 0.6;
+  margin-right: 24px;
+}
+#grid div.vert.first-line {
+  margin-left: 24px;
+}
+/**
+ * Horizontal grid lines, defined by your base line height
+ *
+ * Remember, the CSS properties that define the box model:
+ * visible height = height + borders + margins + padding
+ */
+#grid div.horiz {
+  height: 23px;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "droid Sans";
+}
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 48px;
+}
+section {
+  *zoom: 1;
+}
+section:before,
+section:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+section:after {
+  clear: both;
+}
+section:before,
+section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+li {
+  display: inline;
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+#header {
+  *zoom: 1;
+  position: relative;
+  margin: 12px;
+  margin-top: 0;
+}
+#header:before,
+#header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#header:after {
+  clear: both;
+}
+#header:before,
+#header:after {
+  content: "";
+  display: table;
+}
+#header:after {
+  clear: both;
+}
+#logo {
+  position: absolute;
+  width: 100px;
+  left: 0;
+  top: 0;
+}
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid purple;
+  border-top: 2px solid black;
+  margin: 0;
+}
+#slideFrame {
+  border: 3px solid black;
+  -webkit-box-shadow: 3px 3px 5px #030303;
+  -moz-box-shadow: 3px 3px 5px #030303;
+  box-shadow: 3px 3px 5px #030303;
+}
+.slide {
+  display: none;
+}
+.slide.selected {
+  display: block;
+}
+#slideSelector {
+  text-align: center;
+  display: block;
+  margin: -24px;
+}
+#slideSelector a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Permanent Marker";
+  font-size: 1000%;
+  line-height: .2;
+  margin: 0 auto;
+  color: black;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 5px;
+}
+#slideSelector a:hover {
+  color: #7705f4;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#slideSelector a:selected {
+  color: #7a43b6;
+}
+#slideshow {
+  display: inline;
+  float: left;
+  width: 912px;
+  margin: 0 12px;
+}
+#slideFrame {
+  position: relative;
+  margin: 24px auto;
+}
+#slideFrame .slide img {
+  position: absolute;
+}
+#featureBlurb {
+  margin-right: 246px;
+  display: inline;
+  float: left;
+  width: 756px;
+  margin: 0 12px;
+}
+#featureBlurb ul {
+  width: 803.9999999999999px;
+  margin: 0 -12px;
+  *zoom: 1;
+  display: block;
+}
+#featureBlurb ul:before,
+#featureBlurb ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#featureBlurb ul:after {
+  clear: both;
+}
+#featureBlurb ul:before,
+#featureBlurb ul:after {
+  content: "";
+  display: table;
+}
+#featureBlurb ul:after {
+  clear: both;
+}
+#featureBlurb ul li {
+  display: inline;
+  float: left;
+  width: 366px;
+  margin: 0 12px;
+}
+#productPicker {
+  display: inline;
+  float: left;
+  width: 600px;
+  margin: 0 12px;
+}
+#buyButtonSpace {
+  display: inline;
+  float: left;
+  width: 288px;
+  margin: 0 12px;
+}
+#logo {
+  position: absolute;
+  width: 100px;
+  left: 0;
+  top: 0;
+}
+#header {
+  *zoom: 1;
+  margin-bottom: 21px;
+}
+#header:before,
+#header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#header:after {
+  clear: both;
+}
+#header:before,
+#header:after {
+  content: "";
+  display: table;
+}
+#header:after {
+  clear: both;
+}
+#header h1 {
+  margin-bottom: 0;
+  display: inline-block;
+}
+#mainMenu {
+  float: right;
+}
+#mainMenu li {
+  margin-left: 24px;
+  float: right;
+}
