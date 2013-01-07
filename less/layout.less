@@ -14,13 +14,13 @@ blockquote {
 }
 }
 #featureBlurb {
-    .pull(3);
-    .column(10);
     ul {
         .row(10);
+        .push(1);
         display:block;
         li {
             .column(5,10);
+            height:@baseLineHeight*6;
 }
 }
 }
@@ -30,12 +30,10 @@ blockquote {
 #buyButtonSpace {
     .column(4);
 }
-#about {
-    img {
-        
+#theFam {
+
     .column(4);
 }
-p {
-    .column(8)
-}
+#aboutBlurb {
+        .column(8);
 }
