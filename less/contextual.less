@@ -47,9 +47,35 @@ a:hover {
         left: -6px;
         top:-15px;
         width:80px;
-        z-index:-1;
+        z-index:0;
 }
 h3 {
 margin-left:50px;
 }
 }
+#itemControl {
+    img {
+        float:right;
+}
+    img:first-child {
+        float:left;
+}
+    .btn-group {
+        width:100%;
+        margin:@baseLineHeight/2 0;
+        a {
+            width:50%;
+            padding-left:0;
+            padding-right:0;
+}
+}
+}
+#checkoutControl {
+text-align:center;
+}
+#shippingDisclaimer {
+    color:@gray;
+    font-size: @baseFontSize*.75;
+    line-height: @baseLineHeight*.75;
+}
+

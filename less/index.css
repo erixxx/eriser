@@ -256,6 +256,7 @@ body {
   vertical-align: baseline;
   width: 100%;
   *zoom: 1;
+  *zoom: 1;
 }
 body:before,
 body:after {
@@ -276,6 +277,7 @@ body:after {
 }
 #container {
   width: 936px;
+  *zoom: 1;
   *zoom: 1;
   margin: 0 auto;
 }
@@ -343,8 +345,13 @@ body:after {
   margin: 0;
   padding: 0;
 }
+html,
 body {
   font-family: "droid Sans";
+  overflow-x: hidden;
+}
+p {
+  margin-bottom: 24px;
 }
 h1,
 h2,
@@ -352,20 +359,24 @@ h3 {
   font-weight: bold;
 }
 h1 {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 72px;
-  margin-bottom: 24px;
+  font-family: Orbitron;
 }
 h2 {
   font-size: 32px;
-  line-height: 72px;
-  margin-bottom: 24px;
+  line-height: 48px;
 }
 h3 {
   font-size: 24px;
   line-height: 48px;
 }
+h1.price {
+  font-family: "Permanent Marker";
+  font-size: 64px;
+}
 section {
+  *zoom: 1;
   *zoom: 1;
 }
 section:before,
@@ -392,8 +403,40 @@ li {
 a:link,
 a:visited {
   text-decoration: none;
+  color: #1d6679;
+}
+a:hover {
+  color: #1d6679;
+}
+img,
+iframe {
+  border: 4px solid black;
+}
+iframe {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#video {
+  position: relative;
+  margin-top: 46px;
+}
+#playStrip {
+  position: absolute;
+  top: 120px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+section {
+  padding: 36px 0;
 }
 #header {
+  *zoom: 1;
   *zoom: 1;
   position: relative;
   margin: 12px;
@@ -418,16 +461,18 @@ a:visited {
 }
 #logo {
   position: absolute;
-  width: 100px;
   left: 0;
-  top: 0;
+  bottom: 4px;
+  width: 135px;
+  border: none;
 }
 hr {
   width: 100%;
   border: 0;
-  border-bottom: 1px solid purple;
-  border-top: 2px solid black;
+  height: 4px;
+  background-color: #1d6679;
   margin: 0;
+  margin-top: 5px;
 }
 #slideFrame {
   border: 3px solid black;
@@ -469,6 +514,10 @@ hr {
 #slideSelector a:selected {
   color: #7a43b6;
 }
+#buy {
+  padding: 72px 0;
+  background-color: #7a43b6;
+}
 #slideshow {
   display: inline;
   float: left;
@@ -479,20 +528,13 @@ hr {
   position: relative;
   margin: 24px auto;
 }
-#slideFrame .slide img {
-  position: absolute;
-}
-#featureBlurb {
-  margin-right: 246px;
-  display: inline;
-  float: left;
-  width: 756px;
-  margin: 0 12px;
-}
 #featureBlurb ul {
+  display: block;
   width: 803.9999999999999px;
   margin: 0 -12px;
   *zoom: 1;
+  *zoom: 1;
+  margin-left: 90px;
   display: block;
 }
 #featureBlurb ul:before,
@@ -517,6 +559,7 @@ hr {
   float: left;
   width: 366px;
   margin: 0 12px;
+  height: 144px;
 }
 #productPicker {
   display: inline;
@@ -530,15 +573,23 @@ hr {
   width: 288px;
   margin: 0 12px;
 }
-#logo {
-  position: absolute;
-  width: 100px;
-  left: 0;
-  top: 0;
+#theFam {
+  display: inline;
+  float: left;
+  width: 288px;
+  margin: 0 12px;
+}
+#aboutBlurb {
+  display: inline;
+  float: left;
+  width: 600px;
+  margin: 0 12px;
 }
 #header {
+  margin-top: 24px;
   *zoom: 1;
-  margin-bottom: 21px;
+  *zoom: 1;
+  margin-bottom: 22px;
 }
 #header:before,
 #header:after {
@@ -558,13 +609,58 @@ hr {
   clear: both;
 }
 #header h1 {
-  margin-bottom: 0;
   display: inline-block;
+  margin-bottom: 0;
+  margin-top: 36px;
+  display: inline-block;
+  margin-left: 150px;
+  font-size: 37px;
+  line-height: 24px;
+  font-weight: 700;
 }
 #mainMenu {
   float: right;
+  display: block;
+  margin-top: 24px;
+  font-family: "Permanent Marker";
+  font-size: 18.4px;
+  letter-spacing: 1px;
 }
 #mainMenu li {
-  margin-left: 24px;
+  margin-left: 3px;
   float: right;
+}
+#mainMenu a {
+  color: white;
+  background-color: #1D6679;
+  display: block;
+  padding: 6px 12px 18px 12px;
+  height: 18px;
+  width: 125px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#mainMenu a:hover {
+  color: white;
+  background-color: #80B9C8;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#featureBlurb li {
+  position: relative;
+}
+#featureBlurb li img {
+  border: 0;
+  position: absolute;
+  left: -6px;
+  top: -15px;
+  width: 80px;
+  z-index: -1;
+}
+#featureBlurb li h3 {
+  margin-left: 50px;
 }

@@ -41,7 +41,7 @@ body {
     .clearfix;
 }
 
-#container {
+.container {
     width:@gridsystem-width;
     .clearfix;
     margin: 0 auto;
@@ -55,6 +55,7 @@ body {
     // *margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
     .clearfix;
 }
+
 .column(@x,@columns:@columns) {
     display: inline;
     float: left;
@@ -71,7 +72,7 @@ body {
 }
 
 /*
- *  visual grid for design purposes.
+ *  Toggle visible grid lines, a design aid.
  */
 
 #grid{
@@ -101,7 +102,7 @@ margin-left: -(@gridsystem-width + @gutter-width)/2;
  */
 #grid div.vert{
     width: @column-width;
-    background: black;
+    background: @purple;
     opacity:0.6;
     margin-right: @gutter-width;
 }
@@ -121,34 +122,8 @@ margin-left: -(@gridsystem-width + @gutter-width)/2;
  */
 #grid div.horiz {
     height: @baseLineHeight - 1;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid cyan;
     margin: 0;
     padding: 0;
 
 }
-
-// /**
-//  * Classes for multiple grids
-//  *
-//  * When using more than one grid, remember to set the numberOfGrids 
-//  * option in the hashgrid.js file.
-//  */
-// #grid.grid-1 div.vert{
-// 
-//     /* Vertical grid line colour for grid 1 */
-//     border-color: #FF5F57;
-// 
-// }
-// #grid.grid-2{
-// 
-//     /* Adjustments */
-//     padding: 0 160px;
-//     width: 660px;
-// 
-// }
-// #grid.grid-2 div.vert{
-// 
-//     /* Vertical grid line colour for grid 2 */
-//     border-color: crimson;
-// 
-// }

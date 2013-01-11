@@ -5,6 +5,19 @@ overflow-x:hidden;
 p {
     margin-bottom: @baseLineHeight;
 }
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+.item, .shippingOption {
+    display:block;
+    font-weight:bold;
+}
 h1, h2, h3 {
     font-weight:bold;
 }
@@ -16,6 +29,7 @@ font-family:Orbitron;
 h2 {
 font-size: @baseFontSize * 2;
 line-height: @baseLineHeight * 2;
+font-family: "Permanent Marker";
 }
 h3 {
 font-size: @baseFontSize * 1.5;
@@ -25,4 +39,6 @@ h1.price {
 font-family: "Permanent Marker";
 font-size:@baseFontSize*4;
 }
-
+em {
+    font-weight:bold;
+}

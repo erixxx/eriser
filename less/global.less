@@ -20,10 +20,12 @@ iframe {
     display:block;
     margin-left:auto;
     margin-right:auto;
+    float:right;
 }
 #video {
     position:relative;
     margin-top:@baseLineHeight + @baseLineHeight - 2;
+    padding-bottom:@baseLineHeight*2;
 }
 #playStrip {
     position:absolute;
@@ -36,6 +38,7 @@ color:white;
 
 section {
     padding:@baseLineHeight*1.5 0;
+    .box-sizing(border-box);
 }
 #header {
     .clearfix;
@@ -58,42 +61,21 @@ hr {
     margin:0;
     margin-top:@borderRadiusSmall+2;
 }
-#slideFrame {
-    border: 3px solid black;
-    .box-shadow(3px 3px 5px rgb(3,3,3));
-
-}
-.slide {
-    display:none;
-    &.selected {
-        display:block;
-}
-}
-#slideSelector {
-    text-align:center;
+#product {
     display:block;
-    margin: -@baseLineHeight;
-a {
-    .transition(all .3s ease);
-    font-family:"Permanent Marker";
-    font-size: 1000%;
-    line-height:.2;
-    margin:0 auto;
-    color: black;
-    color: rgba(0,0,0,.6);
-    padding-left:5px;
-    &:hover {
-        color: saturate(@purple, 50%);
-        .transition(all .3s ease);
-}
-&:selected {
-    color: @purple;
-}
-}
+    background: ivory;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    .box-shadow(inset 0px 0px 10px rgba(0,0,0,0.2));
 }
 #buy {
     padding:@baseLineHeight*3 0;
-    background-color:@purple;
+    background-image: url('../imgs/Close-up-of-graffiti.jpg');
 }
-
+#about {
+    background-color:@riserIceLight;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    .box-shadow(inset 0px 0px 10px rgba(0,0,0,0.3));
+}
 
