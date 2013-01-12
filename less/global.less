@@ -1,14 +1,18 @@
 input.buyButton {
-display:none;
-height: @baseLineHeight*4;
-font-size: @baseFontSize*4;
+    display:none;
+    height: @baseLineHeight*4;
+    font-size: @baseFontSize*4;
+    width:70%;
+    margin:0 auto;
 }
 input.buyButton-active {
-display:block;
+    display:block;
 }
 
 section {
     .clearfix();
+    .box-sizing(border-box);
+    display:block;
 }
 li {
     display:inline;
@@ -19,13 +23,21 @@ a:link, a:visited {
     color:@riserIce;
 }
 a:hover {
-color: @riserIceLight;
+    color: @riserIceLight;
+}
+a.destination {
+        color:deepSkyBlue;
+    border-bottom:1px solid deepSkyBlue;
+    &:hover {
+    color:skyBlue;
+        border-color:skyBlue;
+}
 }
 img, iframe {
     border:4px solid black;
+    .box-sizing(border-box);
 }
 iframe {
-    .box-sizing(border-box);
     display:block;
     float:right;
     margin-left:@baseLineHeight;
@@ -63,18 +75,34 @@ hr {
 #product {
     display:block;
     background: ivory;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    .box-shadow(inset 0px 0px 10px rgba(0,0,0,0.2));
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-image: url('../imgs/snowboarder.svg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:100%;
 }
 #buy {
-    padding:@baseLineHeight*3 0;
-    background-image: url('../imgs/Close-up-of-graffiti.jpg');
+    padding:@baseLineHeight*1.5 0;
+    background-image: url('../imgs/graffiti.png');
+    color:white;
 }
 #about {
-    background-color:@riserIceLight;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    .box-shadow(inset 0px 0px 10px rgba(0,0,0,0.3));
+    background-color:ivory;
+    border-top: 2px solid lightgray;
 }
-
+a.contact, a:link.contact {
+    position:relative;
+    color:black;
+    img {
+        position:absolute;
+        right:-70px;
+        top:-5px;
+        height:100%;
+        border:none;
+        margin:0;
+}
+    &:hover {
+        border-bottom:2px solid lightgray;
+}
+}

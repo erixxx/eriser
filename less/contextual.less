@@ -4,7 +4,7 @@
     h1 {
         display:inline-block;
         margin-bottom: 0;
-        margin-top:@baseLineHeight*1.5;
+        margin-top:@baseLineHeight/2;
         display:inline-block;
         margin-left:150px;
         font-size:37px;
@@ -16,7 +16,6 @@ margin-bottom: @baseLineHeight - 2px;
 #mainMenu {
     float:right;
     display:block;
-    margin-top:@baseLineHeight;
     li {
         margin-left: @borderRadiusSmall;
         float:right;
@@ -32,6 +31,7 @@ a {
     height:@baseLineHeight*.75;
     width:125px;
     .transition(all .2s ease-out);
+    border:none;
 }
 a:hover {
     color:white;
@@ -40,6 +40,11 @@ a:hover {
 }
 }
 #video {
+    h1 {
+font-family:"Permanent Marker";
+font-size: @baseFontSize*5;
+margin-bottom: @baseLineHeight*2;
+}
     h3 {
         font-size: @baseFontSize*1.5;
         line-height: @baseLineHeight*1.5;
@@ -64,16 +69,33 @@ h3 {
     margin-left:50px;
 }
 }
+#buy {
+    .checkoutWrap {
+        .clearfix();
+background: rgba(0,0,0,0.6);
+.border-radius(8px);
+padding-top:@baseLineHeight*1.5;
+padding-bottom:@baseLineHeight;
+margin-bottom:@baseLineHeight*3;
+}
+}
+#productPicker {
+p {
+font-size:18px;
+}
+}
+#productPicker>h3 {
+    margin-bottom: @baseLineHeight/2;
+}
 #itemControl {
     img {
+    float:right;
+    height:170px;
         .opacity(40);
         &.selected {
             .opacity(100);
             .transition(all .2s ease-out);
 }
-}
-img {
-    float:right;
 }
 img:first-child {
     float:left;
@@ -91,8 +113,32 @@ img:first-child {
 #checkoutControl {
     text-align:center;
 }
+.shippingSelector {
+    display:block;
+    margin: @baseLineHeight/2 0;
+    label {
+        vertical-align:middle;
+        margin: @baseLineHeight/2 0;
+        margin-left:@baseLineHeight/4;
+        
+}
+
+}
 #shippingDisclaimer {
-    color:@gray;
+    color:@grayLight;
+    text-align:left;
     font-size: @baseFontSize*.75;
-    line-height: @baseLineHeight*.75;
+    line-height: @baseLineHeight*.65;
+    margin-top:@baseLineHeight;
+}
+#about {
+    p {
+        font-size: 18px;
+}
+img {
+float:left;
+margin-right:@baseLineHeight;
+margin-bottom:@baseLineHeight;
+}
+
 }
