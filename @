@@ -1,0 +1,300 @@
+<<<<<<< HEAD
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+        <meta charset="UTF-8">
+        <title>Edge Risers - THE solution for big feet and close edging</title>
+        <link rel="stylesheet/less" href="less/index.less"/>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Orbitron:500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/less-1.3.1.min.js"></script>
+    </head>
+    <body>	
+        <div id="container">
+
+            <div id="header">
+                <h1>
+                    <img id="logo" src="imgs/logo.png" alt="Edge Risers, eRiser's solution to catching your edge, for all boards and all feet"/>
+                </h1>
+                <ul id="mainMenu">
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#buy">Buy</a></li>
+                    <li><a href="#about">Who We Are</a></li>
+                </ul>
+                <hr/>
+            </div>
+
+            <section name="product" id="product">
+                <blockquote><em>The</em> solution to toe and heel drag.</blockquote>
+                <div id="video">
+<iframe width="800" height="600" src="http://www.kickstarter.com/projects/1823707957/edge-risers-snowboarding-accessory-to-improve-how/widget/video.html" frameborder="0"> </iframe>
+                </div>
+                <div id="featureBlurb">
+                <ul>
+                    <li>
+                    <h3>
+                        <img src="durability.jpg" alt="" />
+                        Increases Leverage
+                    </h3>
+                    <p>Edge risers increase leverage properties which allows pressure to transfer more directly to the edges for more responsive carving.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+						Helps those with large feet
+                    </h3>
+						<p>Using the Edge Risers allows people with larger feet to get the most out of their board.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Stops toe and heel drag
+                    </h3>
+					 <p>Our Edge Risers provides 20 mm [apox. 3/4 inch] of lift which give you, the rider, significant toe and heel clearance to avoid drag when edging.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Easy to use
+                    </h3>
+					 <p>The Edge Risers are easy and fast to install. No drilling or modification of board or binding.  It takes only about 5 minutes for you to do the actual installation yourself.</p>
+                    </li><li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Light weight
+                    </h3>
+					 <p>They are very light weight, weighing in at only only 5 oz.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+						Made in the USA
+                    </h3>
+                    <p>The Edge Risers were made entirely in the United States of America.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Durable
+                    </h3>
+                    <p>The Edge Risers are made of high strength polycarbonate plastic, which is also used in creating bullet proof walls.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Reinforced
+                    </h3>
+                    <p>They have a unique cross hatch ribbing pattern to better strengthen the design.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Better board flex
+                    </h3>
+                    <p>Edge risers smaller platform surface allows a more natural board flex.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section name="buy" id="buy">
+            <div id="productPicker">
+                <div id="toggleBox">
+                    <div id="standard"></div>
+                    <div id="burton"></div>
+                </div>
+                <h4>Standard</h4>
+                <p>Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.</p>
+            </div>
+            <div id="buyButtonSpace">
+                <h1 class="price">
+                    $69.99
+                </h1>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+                    <input type="hidden" name="cmd" value="_s-xclick">
+
+                    <input type="hidden" name="hosted_button_id" value="RX3VF7H459HDQ">
+
+                    <input type="submit"  name="submit" class="btn">
+
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+                </form>
+            </div>
+            <div id="shippingDisclaimer"></div>
+
+        </section>
+
+        <section name="about" id="about">
+            <img id="theFam" src="imgs/fatherAndSon.png" alt="Ericks and Papa Stralls, proprietors of eRiser"/>
+            <p>
+            The Herpl Derplstons are the pride of Sheboygan. They make their domestic honey with the greatest care, ensuring the integration of all the beestingers for extra crunchy tingletude. Made in the U. S. of G., dawg. Uncrepusculing the ascendancy, they redo the so far as to go so long do not what. And how!
+            </p>
+        </section>
+
+        <div id="footer">
+            <ul id="footerLinkList">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/hashgrid.js"></script>
+    <script type="text/javascript" src="js/eRiser.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+        <meta charset="UTF-8">
+        <title>Edge Risers - THE solution for big feet and close edging</title>
+        <link rel="stylesheet/less" href="less/index.less"/>
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/less-1.3.1.min.js"></script>
+    </head>
+    <body>	
+        <div id="container">
+
+            <div id="header">
+                <h1>
+                    <img id="logo" src="imgs/logo.png" alt="Edge Risers, eRiser's solution to catching your edge, for all boards and all feet"/>
+                </h1>
+                <ul id="mainMenu">
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#buy">Buy</a></li>
+                    <li><a href="#about">Who We Are</a></li>
+                </ul>
+                <hr/>
+            </div>
+
+            <section name="product" id="product">
+                <blockquote><em>The</em> solution to toe and heel drag.</blockquote> 
+                <div id="video">
+<iframe width="800" height="600" src="http://www.kickstarter.com/projects/1823707957/edge-risers-snowboarding-accessory-to-improve-how/widget/video.html" frameborder="0"> </iframe>
+                </div>
+            <div id="featureBlurb">
+                <ul>
+                    <li>
+                    <h3>
+                        <img src="durability.jpg" alt="" />
+                        Increases Leverage
+                    </h3>
+                    <p>Edge risers increase leverage properties which allows pressure to transfer more directly to the edges for more responsive carving.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+						Helps those with large feet
+                    </h3>
+						<p>Using the Edge Risers allows people with larger feet to get the most out of their board.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Stops toe and heel drag
+                    </h3>
+					 <p>Our Edge Risers provides 20 mm [apox. 3/4 inch] of lift which give you, the rider, significant toe and heel clearance to avoid drag when edging.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Easy to use
+                    </h3>
+					 <p>The Edge Risers are easy and fast to install. No drilling or modification of board or binding.  It takes only about 5 minutes for you to do the actual installation yourself.</p>
+                    </li><li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Light weight
+                    </h3>
+					 <p>They are very light weight, weighing in at only only 5 oz.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+						Made in the USA     
+                    </h3>
+                    <p>The Edge Risers were made entirely in the United States of America.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Durable
+                    </h3>
+                    <p>The Edge Risers are made of high strength polycarbonate plastic, which is also used in creating bullet proof walls.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Reinforced
+                    </h3>
+                    <p>They have a unique cross hatch ribbing pattern to better strengthen the design.</p>
+                    </li>
+                    <li>
+                    <h3>
+                        <img src="derp.jpg" alt="" />
+                        Better board flex
+                    </h3>
+                    <p>Edge risers smaller platform surface allows a more natural board flex.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section name="buy" id="buy">
+            <div id="productPicker">
+                <div id="toggleBox">
+                    <div id="standard"></div>
+                    <div id="burton"></div>
+                </div>
+                <h4>Standard</h4>
+                <p>Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.Lorem Ipsum mofo sit amet.</p>
+            </div>
+            <div id="buyButtonSpace">
+                <h1 class="price">
+                    $69.99
+                </h1>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+                    <input type="hidden" name="cmd" value="_s-xclick">
+
+                    <input type="hidden" name="hosted_button_id" value="RX3VF7H459HDQ">
+
+                    <input type="submit"  name="submit" class="btn">
+
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+                </form>
+            </div>
+            <div id="shippingDisclaimer"></div>
+
+        </section>
+
+        <section name="about" id="about">
+            <p>
+            <img id="theFam" src="fatherAndSon.jpg" alt="Ericks and Papa Stralls, proprietors of eRiser"/>
+            The Herpl Derplstons are the pride of Sheboygan. They make their domestic honey with the greatest care, ensuring the integration of all the beestingers for extra crunchy tingletude. Made in the U. S. of G., dawg. Uncrepusculing the ascendancy, they redo the so far as to go so long do not what. And how!
+            </p>
+        </section>
+
+        <div id="footer">
+            <ul id="footerLinkList">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/hashgrid.js"></script>
+    <script type="text/javascript" src="js/eRiser.js"></script>
+</body>
+</html>
+>>>>>>> d2d160f9411ce3590d46cf45d7d95a40368b5099
