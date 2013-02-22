@@ -553,6 +553,10 @@ hr {
   background-color: ivory;
   border-top: 2px solid lightgray;
 }
+#press {
+  background-color: ivory;
+  border-top: 2px solid lightgray;
+}
 a.contact,
 a:link.contact {
   position: relative;
@@ -812,6 +816,13 @@ a:link.contact:hover {
   margin-left: 6px;
 }
 #shippingDisclaimer {
+  color: #999999;
+  text-align: left;
+  font-size: 12px;
+  line-height: 15.600000000000001px;
+  margin-top: 24px;
+}
+#screwInfo {
   color: #999999;
   text-align: left;
   font-size: 12px;
